@@ -42,7 +42,11 @@
     "Formatting"
   ],
   "release": {
-    "extends": "@cablanchard/semantic-release/dist/npm"
+    "extends": "@cablanchard/semantic-release/dist/npm",
+    "branches": [
+      "main",
+      "next"
+    ]
   },
   "license": "MIT",
   "devDependencies": {
