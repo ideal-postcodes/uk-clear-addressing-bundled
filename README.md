@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="http://img.ideal-postcodes.co.uk/Ideal%20Postcodes%20Open%20Source%20Logo@3x.png" alt="UK Clear Addressing Bundled">
+  <img src="https://img.ideal-postcodes.co.uk/UK%20Clear%20Addressing%20Logo@3x.png" alt="UK Clear Addressing Bundled">
 </h1>
 
 > JavaScript browser bundles for uk-clear-addressing
