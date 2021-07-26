@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Getting Started</title>
+    <style>
+      body {
+        max-width: 38rem;
+        padding: 2rem;
+        margin: auto;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://img.ideal-postcodes.co.uk/favicon.svg"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://img.ideal-postcodes.co.uk/favicon.ico"
+    />
+    <script type="module" src="esm.min.js"></script>
+  </head>
+  <body>
+    <h1>ESM Demo</h1>
+    <pre id="result">// Print result here</pre>
+    <script type="module">
+      import IdealPostcodes  from "../dist/esm.min.js";
+      let address = new IdealPostcodes.Address({
+        postcode: "WS11 5SB",
+        post_town: "CANNOCK",
+        thoroughfare: "Pye Green Road",
+        building_name: "Flower House 189A",
+        organisation_name: 'S D Alcott Florists',
+      });
+      document.getElementById("result").innerText = JSON.stringify(address.formattedAddress(), null, 2);
+    </script>
+  </body>
+</html>
