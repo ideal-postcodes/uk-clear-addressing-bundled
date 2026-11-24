@@ -33,7 +33,7 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}-${{ matrix.node-version }}
 
       - name: Install
-        run: npm install
+        run: npm ci
 
       - name: Build
         run: npm run build
